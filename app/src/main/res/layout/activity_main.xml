@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.matheus.apiroomcrud.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="18dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ListView
+            android:id="@+id/listContato"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:layout_marginTop="191dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editNome"
+            android:layout_below="@+id/editNome"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnConcluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTelefone"
+            android:layout_below="@+id/editTelefone"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="44dp"
+            android:text="Concluir" />
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnConcluir"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/btnConcluir"
+            android:text="Excluir" />
+
+        <EditText
+            android:id="@+id/editInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTelefone"
+            android:layout_below="@+id/editTelefone"
+            android:ems="10"
+            android:hint="Informação"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
